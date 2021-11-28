@@ -1,9 +1,10 @@
-import Components from './Components'
+import Page from './Page';
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
     return ( 
     <div className = "App" >
-        <Components />
+        <Page />
     </div>
     );
 }
