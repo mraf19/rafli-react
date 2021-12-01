@@ -1,10 +1,10 @@
-import Form from "./Form";
+import News from "./News";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
 	return (
 		<div className="App">
-			<Form />
+			<News />
 		</div>
 	);
 }
