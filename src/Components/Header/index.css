@@ -1,6 +1,6 @@
-h1 {
-    font-size: 58px;
-    text-align: center;
-    color: blue;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+.h {
+	font-size: 58px;
+	text-align: center;
+	color: blue;
+	font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }

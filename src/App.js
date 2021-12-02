@@ -1,4 +1,5 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import React, { Fragment } from "react";
+import { Routes, Route } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import GlobalNav from "./GlobalNav";
@@ -10,16 +11,16 @@ import NewsHooks from "./NewsHooks";
 
 function App() {
 	return (
-		<BrowserRouter>
+		<Fragment>
 			<GlobalNav />
 			<Routes>
-				<Route path="/" exact element={<Components />} />
-				<Route path="/bio" element={<Page />} />
-				<Route path="/form" element={<Form />} />
-				<Route path="/news" element={<News />} />
-				<Route path="news-hooks/" element={<NewsHooks />} />
+				<Route path="/" element={<Components />} />
+				<Route path="bio" element={<Page />} />
+				<Route path="form" element={<Form />} />
+				<Route path="news" element={<News />} />
+				<Route path="newshooks" element={<NewsHooks />} />
 			</Routes>
-		</BrowserRouter>
+		</Fragment>
 	);
 }
 
