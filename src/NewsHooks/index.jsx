@@ -3,7 +3,7 @@ import React, { Fragment, useEffect, useState } from "react";
 import { Container, Row, Button } from "react-bootstrap";
 import Axios from "axios";
 //Components
-import CardsHooks from "./CardsHools";
+import CardsHooks from "./CardsHooks";
 import NavHooks from "./NavHooks";
 import SearchHooks from "./SearchHooks";
 
@@ -23,6 +23,8 @@ const NewsHooks = () => {
 				setNews(res.data.articles);
 			})
 			.catch((err) => console.log(err));
+
+		return () => null;
 	}, []);
 
 	useEffect(() => {
@@ -33,6 +35,8 @@ const NewsHooks = () => {
 				setNews(res.data.articles);
 			})
 			.catch((err) => console.log(err));
+
+		return () => null;
 	}, [inputButton]);
 
 	return (
@@ -57,7 +61,11 @@ const NewsHooks = () => {
 							return <CardsHooks news={n} key={i} />;
 						})
 					) : (
-						<h4>Selamat Datang!</h4>
+						<h4>
+							Selamat Datang! Mohon ditunggu sementara kami mengambil permintaan
+							anda! Pastikan koneksi internet anda lancar dan keyword pencarian
+							yang anda masukkan benar!
+						</h4>
 					)}
 				</Row>
 			</Container>
