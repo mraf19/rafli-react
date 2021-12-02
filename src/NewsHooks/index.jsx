@@ -44,7 +44,11 @@ const NewsHooks = () => {
 						setInput(value);
 					}}
 				/>
-				<Button variant="dark" onClick={() => setInputButton(input)}>
+				<Button
+					className="mb-3"
+					variant="dark"
+					onClick={() => setInputButton(input)}
+				>
 					Search
 				</Button>
 				<Row>
